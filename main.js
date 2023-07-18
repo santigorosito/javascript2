@@ -143,29 +143,35 @@ if (nopi) {
 
 //EJERCICIO 2//
 
+let acc = 0
 let preguntarTelefono = prompt("Ingrese su numero de telefono:");
 
 for (let i = 0; i < preguntarTelefono.length; i++) {
-    if (preguntarTelefono.length >= 10) {
-        alert("Su numero es valido")
-        break;
-    } else {
-        alert("Su numero no es valido")
-        break;
-    }
+    acc = acc+1
+}
+
+if (acc === 10 ){
+    alert("Su numero es valido")
+} else {
+    alert("Su numero no es valido")
 }
 
 // EJERCICIO 3//
 
-/*let preguntarNumMinimo = prompt("Ingrese un numero min")
-let preguntarNumMax = prompt("Ingrese un numero max")
+/*let preguntarNumMinimo = Number(prompt("Ingrese un numero min"))
+let preguntarNumMax = Number(prompt("Ingrese un numero max"))
+let accPares = 0
+let accImpares = 0
 
-for (let i = 0; i < preguntarNumMinimo.length && preguntarNumMax.length; i++) {
-    if (i % 1 == 0) {
-        alert(`El numero ${i} es impar`)
-        break;
-    } else if (i % 2 === 0) {
-        alert(`El numero ${i} es par`)
-        break;
+for (let i = preguntarNumMinimo; i <= preguntarNumMax; i++) {
+    if (i % 2 === 0) {
+        accPares += i;
+    } else if (i % 2 !== 0) {
+        accImpares += i;
     }
-}*/
+}
+
+alert(`La suma de todos los números pares da ${accPares}`);
+alert(`La suma de todos los números impares da ${accImpares}`);*/
+
+
