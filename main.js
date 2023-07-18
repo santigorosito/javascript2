@@ -123,3 +123,49 @@ for (valorInical; valorInical + valorSumar; valorInical++){
     console.log(resultado)
 }
 */
+
+//EJERCICIO 1//
+
+/*let preguntarUsuario = prompt("Ingrese mail de usuario");
+let nopi = false
+
+for (let i = 0; i < preguntarUsuario.length; i++) {
+    if (preguntarUsuario.charAt(i) === "@" ) {
+        nopi = true
+        break;
+    }
+} 
+if (nopi) {
+    alert("Su mail es valido")
+} else {
+    alert("Su mail es invalido")
+}*/
+
+//EJERCICIO 2//
+
+let preguntarTelefono = prompt("Ingrese su numero de telefono:");
+
+for (let i = 0; i < preguntarTelefono.length; i++) {
+    if (preguntarTelefono.length >= 10) {
+        alert("Su numero es valido")
+        break;
+    } else {
+        alert("Su numero no es valido")
+        break;
+    }
+}
+
+// EJERCICIO 3//
+
+/*let preguntarNumMinimo = prompt("Ingrese un numero min")
+let preguntarNumMax = prompt("Ingrese un numero max")
+
+for (let i = 0; i < preguntarNumMinimo.length && preguntarNumMax.length; i++) {
+    if (i % 1 == 0) {
+        alert(`El numero ${i} es impar`)
+        break;
+    } else if (i % 2 === 0) {
+        alert(`El numero ${i} es par`)
+        break;
+    }
+}*/
